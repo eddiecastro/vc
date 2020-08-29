@@ -1,0 +1,10 @@
+.App {
+}
+.main-layout {
+  /* padding: 10px; */
+  min-height: 100vh;
+  background-color: #111111;
+}
+.footer {
+  min-height: 30vh;
+}
