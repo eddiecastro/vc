@@ -8,3 +8,13 @@
 .footer {
   min-height: 30vh;
 }
+
+.ui.table thead tr:first-child > th:first-child {
+  position: sticky !important;
+  top: 0;
+  z-index: 2;
+}
+
+.table-header {
+  display: inline;
+}
