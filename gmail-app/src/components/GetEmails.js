@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Table } from "semantic-ui-react";
+import { Table, Checkbox } from "semantic-ui-react";
 
 export function GetEmails() {
   const [emails, setEmails] = useState([]);
@@ -32,7 +32,10 @@ export function GetEmails() {
       return (
         <>
           <Table.Row>
-            <Table.Cell>{sender}</Table.Cell>
+            <Table.Cell>
+              <Checkbox className="checkbox" />
+              {sender}
+            </Table.Cell>
             <Table.Cell>{subject}</Table.Cell>
             <Table.Cell>{time}</Table.Cell>
           </Table.Row>

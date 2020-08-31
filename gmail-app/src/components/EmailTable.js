@@ -1,11 +1,19 @@
 import React from "react";
-import "../styles.css";
-import { Table, Menu, Label, Icon, Image, Header } from "semantic-ui-react";
+import "./styles.css";
+import {
+  Table,
+  Menu,
+  Label,
+  Icon,
+  Image,
+  Header,
+  Grid
+} from "semantic-ui-react";
 import { GetEmails } from "./GetEmails";
 
-export function EmailTable() {
+export default function EmailTable() {
   return (
-    <Table celled inverted selectable>
+    <Table inverted selectable unstackable>
       <Table.Header>
         <Table.Row>
           <Table.HeaderCell>
@@ -20,6 +28,7 @@ export function EmailTable() {
                 </Header.Content>
               </Header>
             </Table.Cell>
+            <div className="header-active"></div>
           </Table.HeaderCell>
           <Table.HeaderCell>
             <Table.Cell>
@@ -45,63 +54,7 @@ export function EmailTable() {
       </Table.Header>
 
       <Table.Body>
-        {/* <Table.Row> */}
-        {/* <Table.Cell> */}
         <GetEmails />
-        {/* </Table.Cell> */}
-        {/* <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row> */}
-        {/* <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row> */}
-        {/* <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row> */}
-        {/* <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-          <Table.Cell>Cell</Table.Cell>
-        </Table.Row> */}
       </Table.Body>
 
       <Table.Footer>
@@ -125,4 +78,3 @@ export function EmailTable() {
     </Table>
   );
 }
-export default EmailTable;

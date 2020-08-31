@@ -1,7 +1,7 @@
 .App {
 }
 .main-layout {
-  /* padding: 10px; */
+  padding: 10px;
   min-height: 100vh;
   background-color: #111111;
 }
@@ -17,4 +17,25 @@
 
 .table-header {
   display: inline;
+}
+
+.checkbox {
+  margin-right: 10px;
+}
+
+.header-active {
+  border-bottom: solid;
+  border-bottom-color: #ffff;
+}
+
+.ui.grid .main-header {
+  padding: 10px;
+  margin-top: 0.5px;
+  text-align: center;
+}
+
+.ui.search .prompt {
+  border-radius: 10px !important;
+  width: 425px;
+  height: 3.5rem;
 }

@@ -1,16 +1,14 @@
 import React from "react";
 import "./styles.css";
-import { MainLayout } from "./MainLayout";
+import { MainLayout } from ".";
 import { Grid } from "semantic-ui-react";
-import { Footer } from "./subcomponents";
 
-function App() {
+export function App() {
   return (
     <>
       <Grid>
         <MainLayout />
       </Grid>
-      {/* <Footer /> */}
     </>
   );
 }
