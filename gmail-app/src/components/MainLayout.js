@@ -8,7 +8,7 @@ export default function MainLayout() {
   return (
     <Grid className="main-layout">
       {/* <Grid columns={1}> */}
-      <Grid.Row>
+      <Grid.Row centered stretched>
         <Grid.Column width={16}>
           <MainHeader />
         </Grid.Column>
