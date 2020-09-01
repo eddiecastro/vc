@@ -6,9 +6,9 @@ import { Grid } from "semantic-ui-react";
 export function App() {
   return (
     <>
-      <Grid>
-        <MainLayout />
-      </Grid>
+      {/* <Grid> */}
+      <MainLayout />
+      {/* </Grid> */}
     </>
   );
 }

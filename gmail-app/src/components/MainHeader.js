@@ -17,13 +17,6 @@ export default function MainHeader() {
             style={{ marginLeft: 35, width: "100%" }}
             input={{ icon: "search", iconPosition: "left" }}
             placeholder="Search mail"
-            // loading={isLoading}
-            // onResultSelect={this.handleResultSelect}
-            // onSearchChange={_.debounce(this.handleSearchChange, 500, {
-            //   leading: true,
-            // })}
-            // results={results}
-            // value={value}
           />
         </Grid.Column>
       </Grid.Row>

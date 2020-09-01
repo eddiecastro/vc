@@ -3,92 +3,40 @@ import {
   Popup,
   Icon,
   Image,
-  Menu,
-  Segment,
+  Divider,
   Sidebar,
   Grid,
   Label
 } from "semantic-ui-react";
 
 export default function SideBar() {
-  const [visible, setVisible] = React.useState(false);
+  //   const [visible, setVisible] = React.useState(false);
 
   return (
-    <Grid columns={1} style={{ marginLeft: 20 }} container>
-      <Grid.Row style={{ marginLeft: 10 }}>
+    <Grid columns={1} style={{ marginTop: 15, paddingBottom: 5 }}>
+      <Grid.Row>
         <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="plus circle" size="huge" style={{ color: "white" }} />
-            }
-            content="Compose"
-            basic
-            label={{ as: "a", corner: "left", icon: "heart" }}
-          />
-          {/* <Checkbox
-          checked={visible}
-          label={{ children: <code>visible</code> }}
-          onChange={(e, data) => setVisible(data.checked)}
-        /> */}
+          <Label as="a" color="teal">
+            Inbox
+          </Label>
         </Grid.Column>
         <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="envelope" size="small" style={{ color: "white" }} />
-            }
-            content="Inbox"
-            basic
-          />
+          <Label as="a" color="blue">
+            Business
+          </Label>
         </Grid.Column>
         <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="star" size="small" style={{ color: "white" }} />
-            }
-            content="Starred"
-            basic
-          />
+          <Label as="a" color="red">
+            Important
+          </Label>
         </Grid.Column>
         <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="clock" size="small" style={{ color: "white" }} />
-            }
-            content="Snoozed"
-            basic
-          />
+          <Label as="a" color="green">
+            family
+          </Label>
         </Grid.Column>
         <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="bookmark" size="small" style={{ color: "white" }} />
-            }
-            content="Important"
-            basic
-          />
-        </Grid.Column>
-        <Grid.Column>
-          <Popup
-            trigger={
-              <Icon
-                name="paper plane"
-                size="small"
-                style={{ color: "white" }}
-              />
-            }
-            content="Sent"
-            basic
-          />
-        </Grid.Column>
-        <Grid.Column>
-          <Popup
-            trigger={
-              <Icon name="file" size="small" style={{ color: "white" }} />
-            }
-            content="Drafts"
-            basic
-          />
-          <div></div>
+          <Divider style={{ color: "grey" }} />
         </Grid.Column>
         <Grid.Column>
           <Popup
@@ -179,5 +127,3 @@ export default function SideBar() {
     </Grid>
   );
 }
-
-// https://react.semantic-ui.com/images/avatar/small/elliot.jpg'

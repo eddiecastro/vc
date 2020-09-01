@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Email } from ".";
-import { Table, Checkbox, Button, Icon } from "semantic-ui-react";
 
 export function GetEmails() {
   const [emails, setEmails] = useState([]);
@@ -40,6 +39,7 @@ export function GetEmails() {
           subject={email.subject}
           date={email.date}
           deleteEmail={deleteEmail}
+          setSelectedEmail={setSelectedEmail}
         />
       );
     });
