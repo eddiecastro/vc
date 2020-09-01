@@ -4,4 +4,5 @@ export { default as MainLayout } from "./MainLayout";
 export { default as EmailTable } from "./EmailTable";
 export { default as GetEmails } from "./EmailTable";
 export { default as SideBar } from "./SideBar";
+export { default as Email } from "./Email";
 // //
