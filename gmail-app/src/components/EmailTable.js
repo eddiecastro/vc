@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./styles.css";
 import {
   Table,
@@ -7,10 +7,8 @@ import {
   Image,
   Header,
   Sidebar,
-  Segment,
   Popup,
   Grid,
-  Button,
   Label,
   Divider
 } from "semantic-ui-react";
@@ -18,7 +16,6 @@ import { GetEmails } from "./GetEmails";
 
 export default function EmailTable({ visible, setVisible }) {
   return (
-    // <>
     <Sidebar.Pushable>
       <Sidebar
         as={Menu}
@@ -32,44 +29,44 @@ export default function EmailTable({ visible, setVisible }) {
       >
         <Grid columns={1} style={{ marginTop: 15, paddingBottom: 5 }}>
           <Grid.Row>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="teal">
                 Inbox
               </Label>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="blue">
                 Business
               </Label>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="red">
                 Important
               </Label>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="green">
                 family
               </Label>
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Divider style={{ color: "grey" }} />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
-                  <Icon name="chat" size="small" style={{ color: "white" }} />
+                  <Icon name="chat" size="large" style={{ color: "white" }} />
                 }
                 content="Forums"
                 basic
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Icon
                     name="video camera"
-                    size="small"
+                    size="large"
                     style={{ color: "white" }}
                   />
                 }
@@ -77,12 +74,12 @@ export default function EmailTable({ visible, setVisible }) {
                 basic
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Icon
                     name="keyboard outline"
-                    size="small"
+                    size="large"
                     style={{ color: "white" }}
                   />
                 }
@@ -92,7 +89,7 @@ export default function EmailTable({ visible, setVisible }) {
             </Grid.Column>
           </Grid.Row>
           <Grid.Row>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Image
@@ -104,7 +101,7 @@ export default function EmailTable({ visible, setVisible }) {
                 basic
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Image
@@ -116,7 +113,7 @@ export default function EmailTable({ visible, setVisible }) {
                 basic
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Image
@@ -128,7 +125,7 @@ export default function EmailTable({ visible, setVisible }) {
                 basic
               />
             </Grid.Column>
-            <Grid.Column>
+            <Grid.Column style={{ marginBottom: 15 }}>
               <Popup
                 trigger={
                   <Image
@@ -148,7 +145,7 @@ export default function EmailTable({ visible, setVisible }) {
         <Table inverted selectable unstackable>
           <Table.Header>
             <Table.Row>
-              <Table.HeaderCell colSpan="3">
+              <Table.HeaderCell colSpan="4">
                 <Table.Cell>
                   <Header as="h4" image>
                     <Image
@@ -171,7 +168,7 @@ export default function EmailTable({ visible, setVisible }) {
 
           <Table.Footer>
             <Table.Row>
-              <Table.HeaderCell colSpan="3">
+              <Table.HeaderCell colSpan="4">
                 <Menu floated="right" pagination>
                   <Menu.Item as="a" icon>
                     <Icon name="chevron left" />
@@ -190,6 +187,5 @@ export default function EmailTable({ visible, setVisible }) {
         </Table>
       </Sidebar.Pusher>
     </Sidebar.Pushable>
-    // </>
   );
 }

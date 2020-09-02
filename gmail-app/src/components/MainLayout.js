@@ -1,15 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
-import {
-  Grid,
-  Icon,
-  Popup,
-  Menu,
-  Segment,
-  Transition,
-  Button
-} from "semantic-ui-react";
-import { MainHeader, Footer, EmailTable, SideBar } from ".";
+import { Grid, Icon, Popup, Button } from "semantic-ui-react";
+import { MainHeader, Footer, EmailTable } from ".";
 
 export default function MainLayout() {
   const [visible, setVisible] = useState(false);
@@ -18,19 +10,13 @@ export default function MainLayout() {
 
   return (
     <Grid className="main-layout" stackable>
-      {/* <Grid columns={1}> */}
       <Grid.Row>
         <Grid.Column width={16}>
           <MainHeader />
         </Grid.Column>
       </Grid.Row>
       <Grid.Row>
-        <Grid.Column
-          width={1}
-          style={{ paddingLeft: 10 }}
-          computer={1}
-          mobile={4}
-        >
+        <Grid.Column style={{ paddingLeft: 10 }} computer={1} mobile={4}>
           <Button
             style={{ backgroundColor: "transparent" }}
             onClick={toggleVisibility}
@@ -48,10 +34,8 @@ export default function MainLayout() {
               label={{ as: "a", corner: "left", icon: "heart" }}
             />
           </Button>
-
-          {/* <SideBar /> */}
         </Grid.Column>
-        <Grid.Column width={14} mobile={8}>
+        <Grid.Column computer={14} mobile={8}>
           <EmailTable visible={visible} setVisible={setVisible} />
         </Grid.Column>
       </Grid.Row>

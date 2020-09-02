@@ -1,0 +1,453 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders the component 1`] = `
+<div
+  class="ui stackable grid main-layout"
+>
+  <div
+    class="row"
+  >
+    <div
+      class="sixteen wide column"
+    >
+      <div
+        class="ui grid main-header"
+      >
+        <div
+          class="row"
+        >
+          <div
+            class="column"
+          >
+            <i
+              aria-hidden="true"
+              class="bars large icon"
+              style="color: white;"
+            />
+          </div>
+          <div
+            class="column"
+            style="width: 109px; height: 40px;"
+          >
+            <img
+              class="ui image"
+              srcset="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_2x.png 2x ,https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_dark_1x.png 1x"
+            />
+          </div>
+          <div
+            class="ten wide column"
+          >
+            <div
+              class="ui fluid search"
+              style="margin-left: 35px; width: 100%;"
+            >
+              <div
+                class="ui left icon input"
+              >
+                <input
+                  autocomplete="off"
+                  class="prompt"
+                  placeholder="Search mail"
+                  tabindex="0"
+                  type="text"
+                  value=""
+                />
+                <i
+                  aria-hidden="true"
+                  class="search icon"
+                />
+              </div>
+              <div
+                class="results transition"
+              >
+                <div
+                  class="message empty"
+                >
+                  <div
+                    class="header"
+                  >
+                    No results found.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="row"
+  >
+    <div
+      class="one wide computer four wide mobile column"
+      style="padding-left: 10px;"
+    >
+      <button
+        class="ui button"
+        style="background-color: transparent;"
+      >
+        <i
+          aria-hidden="true"
+          class="plus circle huge icon"
+          style="color: white;"
+        />
+      </button>
+    </div>
+    <div
+      class="fourteen wide computer eight wide mobile column"
+    >
+      <div
+        class="pushable"
+      >
+        <div
+          class="ui inverted vertical labeled icon ui overlay left thin sidebar menu"
+        >
+          <div
+            class="ui one column grid"
+            style="margin-top: 15px; padding-bottom: 5px;"
+          >
+            <div
+              class="row"
+            >
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <a
+                  class="ui teal label"
+                >
+                  Inbox
+                </a>
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <a
+                  class="ui blue label"
+                >
+                  Business
+                </a>
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <a
+                  class="ui red label"
+                >
+                  Important
+                </a>
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <a
+                  class="ui green label"
+                >
+                  family
+                </a>
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <div
+                  class="ui divider"
+                  style="color: grey;"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <i
+                  aria-hidden="true"
+                  class="chat large icon"
+                  style="color: white;"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <i
+                  aria-hidden="true"
+                  class="video camera large icon"
+                  style="color: white;"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <i
+                  aria-hidden="true"
+                  class="keyboard outline large icon"
+                  style="color: white;"
+                />
+              </div>
+            </div>
+            <div
+              class="row"
+            >
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <img
+                  class="ui avatar image"
+                  src="https://react.semantic-ui.com/images/avatar/small/elliot.jpg"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <img
+                  class="ui avatar image"
+                  src="https://react.semantic-ui.com/images/avatar/small/jenny.jpg"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <img
+                  class="ui avatar image"
+                  src="https://react.semantic-ui.com/images/avatar/small/stevie.jpg"
+                />
+              </div>
+              <div
+                class="column"
+                style="margin-bottom: 15px;"
+              >
+                <img
+                  class="ui avatar image"
+                  src="https://react.semantic-ui.com/images/avatar/small/christian.jpg"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pusher"
+        >
+          <table
+            class="ui inverted selectable unstackable table"
+          >
+            <thead
+              class=""
+            >
+              <tr
+                class=""
+              >
+                <th
+                  class=""
+                  colspan="4"
+                >
+                  <td
+                    class=""
+                  >
+                    <h4
+                      class="ui image header"
+                    >
+                      <img
+                        class="ui mini image"
+                        src="https://www.gstatic.com/images/icons/material/system/2x/inbox_white_20dp.png"
+                      />
+                      <div
+                        class="content"
+                        style="color: white;"
+                      >
+                        Primary
+                      </div>
+                    </h4>
+                  </td>
+                  <div
+                    class="header-active"
+                  />
+                </th>
+              </tr>
+            </thead>
+            <tbody
+              class=""
+            />
+            <tfoot
+              class=""
+            >
+              <tr
+                class=""
+              >
+                <th
+                  class=""
+                  colspan="4"
+                >
+                  <div
+                    class="ui pagination right floated menu"
+                  >
+                    <a
+                      class="icon item"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="chevron left icon"
+                      />
+                    </a>
+                    <a
+                      class="item"
+                    >
+                      1
+                    </a>
+                    <a
+                      class="item"
+                    >
+                      2
+                    </a>
+                    <a
+                      class="item"
+                    >
+                      3
+                    </a>
+                    <a
+                      class="item"
+                    >
+                      4
+                    </a>
+                    <a
+                      class="icon item"
+                    >
+                      <i
+                        aria-hidden="true"
+                        class="chevron right icon"
+                      />
+                    </a>
+                  </div>
+                </th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="row"
+  >
+    <div
+      class="sixteen wide column"
+    >
+      <div
+        class=""
+      >
+        <div />
+        <div
+          class="ui sticky"
+        >
+          <div
+            class="ui center aligned grid footer"
+          >
+            <div
+              class="three column row"
+            >
+              <div
+                class="column"
+              >
+                <p
+                  style="color: rgb(145, 145, 145);"
+                >
+                  24.68 GB (24%) of 100 GB used
+                </p>
+                <div
+                  class="row"
+                >
+                  <button
+                    class="ui button"
+                    style="background-color: transparent;"
+                  >
+                    <p
+                      style="color: rgb(145, 145, 145);"
+                    >
+                      Manage 
+                    </p>
+                  </button>
+                </div>
+              </div>
+              <div
+                class="column"
+                style="display: inLine;"
+              >
+                <button
+                  class="ui button"
+                  style="background-color: transparent;"
+                >
+                  <p
+                    style="color: rgb(145, 145, 145);"
+                  >
+                    Terms
+                  </p>
+                </button>
+                <span
+                  style="color: rgb(145, 145, 145);"
+                >
+                   ·
+                </span>
+                <button
+                  class="ui button"
+                  style="background-color: transparent;"
+                >
+                  <p
+                    style="color: rgb(145, 145, 145);"
+                  >
+                    Privacy 
+                  </p>
+                </button>
+                <span
+                  style="color: rgb(145, 145, 145);"
+                >
+                   ·
+                </span>
+                <button
+                  class="ui button"
+                  style="background-color: transparent;"
+                >
+                  <p
+                    style="color: rgb(145, 145, 145);"
+                  >
+                    Program Policies
+                  </p>
+                </button>
+              </div>
+              <div
+                class="column"
+              >
+                <p
+                  style="color: rgb(145, 145, 145);"
+                >
+                  Last account activity: 39 minutes ago
+                </p>
+                <div
+                  class="row"
+                >
+                  <button
+                    class="ui button"
+                    style="background-color: transparent;"
+                  >
+                    <p
+                      style="color: rgb(145, 145, 145);"
+                    >
+                      Details 
+                    </p>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

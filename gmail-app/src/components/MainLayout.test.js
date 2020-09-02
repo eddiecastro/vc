@@ -1,8 +1,9 @@
 import React from "react";
 import { render } from "@testing-library/react";
-import App from "./components/App";
+
+import { MainLayout } from ".";
 
 test("it renders the component", () => {
-  const { container } = render(<App />);
+  const { container } = render(<MainLayout />);
   expect(container.firstChild).toMatchSnapshot();
 });

@@ -4,56 +4,63 @@
       "id": 1,
       "sender": "Mom",
       "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
-      "tag": "Important"
+      "date": "2020-07-08T07:01:43.511Z",
+      "tag": "Personal"
     },
     {
       "id": 2,
       "sender": "Children's Place",
       "subject": "Your deal expires soon",
-      "date": "7:40 PM",
+      "date": "2020-07-08T07:02:43.511Z",
       "tag": "Important"
     },
     {
       "id": 3,
-      "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
-      "tag": "Important"
+      "sender": "Dad",
+      "subject": "Ready for the trip?",
+      "date": "2020-07-08T07:03:43.511Z",
+      "tag": "Personal"
     },
     {
       "id": 4,
-      "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
-      "tag": "Business"
+      "sender": "T&T Attorneys",
+      "subject": "Claim Pemding",
+      "date": "2020-07-08T07:04:43.511Z",
+      "tag": "Important"
     },
     {
       "id": 5,
       "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
-      "tag": "Business"
+      "subject": "It's me again!",
+      "date": "2020-07-08T08:05:43.511Z",
+      "tag": "Personal"
     },
     {
       "id": 6,
-      "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
+      "sender": "Sarah",
+      "subject": "Car Quotes",
+      "date": "2020-07-08T09:06:43.511Z",
       "tag": "Personal"
     },
     {
       "id": 7,
-      "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
+      "sender": "Regis",
+      "subject": "This Price is Right!",
+      "date": "2020-07-08T10:07:43.511Z",
       "tag": "Personal"
     },
     {
       "id": 8,
-      "sender": "Mom",
-      "subject": "Hello from Hawaii",
-      "date": "5:04 PM",
+      "sender": "Tom Hilfiger",
+      "subject": "New Designs",
+      "date": "2020-07-08T11:08:43.511Z",
+      "tag": "Important"
+    },
+    {
+      "id": 9,
+      "sender": "Lil Uzi",
+      "subject": "New Music",
+      "date": "2020-07-08T12:09:43.511Z",
       "tag": "Personal"
     }
   ]

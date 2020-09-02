@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Email } from ".";
+import { format, parseISO } from "date-fns";
 
 export function GetEmails() {
   const [emails, setEmails] = useState([]);
@@ -27,19 +28,21 @@ export function GetEmails() {
     getEmails();
   }, []);
 
-  console.log(emails);
   const allEmails =
     emails &&
     emails.map(email => {
+      const formatted = parseISO(email.date);
+      const date = format(new Date(formatted), "mm-dd-yyyy");
       return (
         <Email
           key={email.id}
           id={email.id}
           sender={email.sender}
           subject={email.subject}
-          date={email.date}
+          date={date}
           deleteEmail={deleteEmail}
           setSelectedEmail={setSelectedEmail}
+          tag={email.tag}
         />
       );
     });

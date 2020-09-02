@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`it renders the component 1`] = `
+<tr
+  class=""
+>
+  <td
+    class=""
+  >
+    <button
+      aria-label="email-checkbox"
+      class="ui button"
+      style="background-color: transparent;"
+    >
+      <div
+        class="ui fitted checkbox checkbox"
+      >
+        <input
+          class="hidden"
+          readonly=""
+          tabindex="0"
+          type="checkbox"
+          value="1"
+        />
+        <label />
+      </div>
+    </button>
+     Test 1
+  </td>
+  <td
+    class=""
+  >
+    lorum ipsum
+  </td>
+  <td
+    class=""
+  >
+    <a
+      class="ui blue label"
+      style="margin-left: 30px;"
+    >
+      Personal
+    </a>
+  </td>
+  <td
+    class=""
+  >
+    2020-07-08T07:01:43.511Z
+  </td>
+</tr>
+`;
