@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Table, Checkbox, Button, Icon, Label } from "semantic-ui-react";
 
 export default function Emails({
@@ -8,10 +8,11 @@ export default function Emails({
   date,
   deleteEmail,
   setSelectedEmail,
-  tag
+  tags
 }) {
   const [display, setDisplay] = useState(false);
-  const [tagColor, setTagColor] = useState(JSON.stringify(tag));
+  const [addTag, setAddTag] = useState("");
+  const [tagColor, setTagColor] = useState("");
 
   const click = () => {
     setDisplay(!display);
@@ -26,10 +27,26 @@ export default function Emails({
   };
 
   const color = () => {
-    if (tagColor === JSON.stringify("Important")) {
-      return "red";
-    } else return "blue";
+    if (tags && tags.length === 2) {
+      setAddTag("both");
+    } else if (tags && tags !== []) {
+      tags.map(t => {
+        if (t === "work") {
+          setTagColor("blue");
+          setAddTag("work");
+        } else if (t === "travel") {
+          setTagColor("green");
+          setAddTag("travel");
+        }
+      });
+    } else {
+      setAddTag("");
+    }
   };
+
+  useEffect(() => {
+    color();
+  });
   return (
     <>
       <Table.Row>
@@ -48,11 +65,23 @@ export default function Emails({
           {sender}
         </Table.Cell>
         <Table.Cell>{subject}</Table.Cell>
-        <Table.Cell>
-          <Label as="a" color={color()} style={{ marginLeft: 30 }}>
-            {JSON.parse(tagColor)}
-          </Label>
-        </Table.Cell>
+        {addTag !== "" && addTag !== "both" ? (
+          <Table.Cell>
+            <Label as="a" color={tagColor} style={{ marginLeft: 30 }}>
+              {addTag}
+            </Label>
+          </Table.Cell>
+        ) : (
+          <Table.Cell>
+            <Label as="a" color="blue" style={{ marginLeft: 30 }}>
+              work
+            </Label>
+            <Label as="a" color="green" style={{ marginLeft: 30 }}>
+              travel
+            </Label>
+          </Table.Cell>
+        )}
+
         <Table.Cell>
           {date}
           {display ? (

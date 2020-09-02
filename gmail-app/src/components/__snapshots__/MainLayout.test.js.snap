@@ -127,17 +127,7 @@ exports[`it renders the component 1`] = `
                 <a
                   class="ui blue label"
                 >
-                  Business
-                </a>
-              </div>
-              <div
-                class="column"
-                style="margin-bottom: 15px;"
-              >
-                <a
-                  class="ui red label"
-                >
-                  Important
+                  Work
                 </a>
               </div>
               <div
@@ -147,7 +137,7 @@ exports[`it renders the component 1`] = `
                 <a
                   class="ui green label"
                 >
-                  family
+                  Travel
                 </a>
               </div>
               <div

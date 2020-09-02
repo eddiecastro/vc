@@ -39,7 +39,13 @@ exports[`it renders the component 1`] = `
       class="ui blue label"
       style="margin-left: 30px;"
     >
-      Personal
+      work
+    </a>
+    <a
+      class="ui green label"
+      style="margin-left: 30px;"
+    >
+      travel
     </a>
   </td>
   <td

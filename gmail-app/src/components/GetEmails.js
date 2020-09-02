@@ -18,7 +18,7 @@ export function GetEmails() {
     try {
       const res = await axios.get("../emails.json");
       const data = res.data;
-      setEmails(data.emails);
+      setEmails(data.messages);
     } catch (err) {
       console.log(err);
     }
@@ -27,7 +27,7 @@ export function GetEmails() {
   useEffect(() => {
     getEmails();
   }, []);
-
+  console.log(typeof emails);
   const allEmails =
     emails &&
     emails.map(email => {
@@ -42,7 +42,7 @@ export function GetEmails() {
           date={date}
           deleteEmail={deleteEmail}
           setSelectedEmail={setSelectedEmail}
-          tag={email.tag}
+          tags={email.tags}
         />
       );
     });

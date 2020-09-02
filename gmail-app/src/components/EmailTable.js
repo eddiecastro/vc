@@ -36,17 +36,12 @@ export default function EmailTable({ visible, setVisible }) {
             </Grid.Column>
             <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="blue">
-                Business
-              </Label>
-            </Grid.Column>
-            <Grid.Column style={{ marginBottom: 15 }}>
-              <Label as="a" color="red">
-                Important
+                Work
               </Label>
             </Grid.Column>
             <Grid.Column style={{ marginBottom: 15 }}>
               <Label as="a" color="green">
-                family
+                Travel
               </Label>
             </Grid.Column>
             <Grid.Column style={{ marginBottom: 15 }}>
